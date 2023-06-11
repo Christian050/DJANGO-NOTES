@@ -1,0 +1,24 @@
+# TCP Connections / Socket
+
+    In computer networking, an internet socket or network socket is an
+endpoint of a bidirectional inter-process communication flow across
+an Internet Protocol-based computer network, such as the internet. 
+
+            Application Process ← Internet → Application Process
+
+
+
+# TCP Port Numbers
+
+A port is an application-specific or process-specific software communications endpoint
+
+It allows multiple networked applications to coexist on the same server.
+
+Here is a list of well-known TCP port numbers:
+
+        Incoming Email - email protocol 25
+        Login - login protocol 23
+        Web Server - port 80
+        Web Server - port 443
+        Personal Mail Box - email protocol 109
+        Personal Mail Box - email protocol 110

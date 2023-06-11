@@ -1,0 +1,71 @@
+# HyperText Transfer Protocol (HTTP)
+
+
+The dominant Application Layer Protocol on the internet.
+
+Invented for the Web - to retrieve HTML, Images, Documents, etc.
+
+Extended to handle data in addition to document - RSS, Web Services,
+etc.
+
+Basic Concept: Make a connection - Request a document
+- Retrieve the document - Close the connection.
+
+Internet and sockets were created in the 1970's, HTTP was invented
+in 1990 and is an application protocol that runs atop sockets. 
+  
+
+
+
+
+# Uniform Resource Locator (URL)
+
+
+    http://  | data.pr4e.org  | /page1.htm
+   protocol  |     host       |  document
+
+
+
+
+
+# Internet Standards
+
+The standards for all of the internet protocols (inner workings)
+are developed by an organization.
+
+Internet Engineering Task Force (IETF).
+
+www.ietf.org
+
+Standards are called 'RFCs' - 'Requests for Comments'.
+
+
+
+
+# Making an HTTP Request
+
+Connect to the server like data.pr4e.org - a 'handshake'
+
+Request a document:
+
+    GET http://data.pr4.org/page1.htm HTTP/1.0
+    GET http://www.mlive.com/ann-arbor/ HTTP/1.0
+    GET http://www.facebook.com HTTP/1.0
+
+    (
+        Install telnet, and in command line, and the host (data.pr4e.org)
+    and the port (80)
+
+    Type any of the above requests including 'GET' and 'HTTP/1.0'
+    and leave an empty line after.
+
+    When done it presents a header which includes the status line
+    'HTTP/1.1 200 OK' or '404 Not Found' as well as the content type
+    at the bottom. 'Content-Type: text/html' and leaves a blank line
+    after the header to indicate the header (meta data) has been completed
+    before it provides the data.
+    )
+
+
+
+NB: Network Sockets are like phone calls for pairs of applications.
